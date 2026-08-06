@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>eSIM流量套餐对比 · 云居民</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700;900&family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="analytics.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav-inner">
+    <a href="index.html" class="logo"><span class="dot"></span><span class="logo-text">云居民·的<br><span class="logo-highlight">登机牌</span></span></a>
+    <nav>
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单">☰</button>
+      <ul id="navList">
+        <li><a href="esim-card.html">eSIM实体卡</a></li>
+        <li><a href="esim.html">eSIM流量</a></li>
+        <li><a href="keepnumber.html">eSIM保号</a></li>
+        <li><a href="fxcard.html">境外银行卡</a></li>
+        <li><a href="network.html">科学上网</a></li>
+        <li><a href="index.html#faq">常见问题</a></li>
+        <li><a href="contact.html">联系我们</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<script>document.getElementById('navToggle').addEventListener('click',function(){document.getElementById('navList').classList.toggle('open');});</script>
+
+<div class="wrap page-head">
+  <div class="crumb">DATA PLANS</div>
+  <h1>中国大陆 eSIM 流量套餐对比</h1>
+  <p class="intro">按使用场景实测整理，标注真实门槛与限制，而不是只放"最低价"这一个数字。数据采集于2026年7月，价格与优惠码可能随时调整，下单前请以官网实时页面为准。</p>
+</div>
+
+<div class="wrap">
+  <div class="pick-label">Long-term Picks</div>
+  <div class="pick-title">长期使用与优惠码推荐</div>
+  <p class="pick-note">需要长期在大陆使用、访问ChatGPT/Claude等境外服务，或准备一张永不过期的备用流量，重点看下面三种方案。</p>
+
+  <div class="plan-grid">
+
+    <div class="plan-card featured">
+      <div class="plan-body">
+        <div class="plan-badge">S</div>
+        <div class="plan-name">Superalink</div>
+        <div class="plan-sub mono">短期大流量 · 最高8折</div>
+        <div class="feature-pill">🌐 AI自动分流：新加坡IP直连，非香港</div>
+        <ul class="plan-list">
+          <li>中国移动网络，支持3G/4G/5G</li>
+          <li>每日500MB–5GB多档套餐可选</li>
+          <li>无需eKYC实名，支持热点共享</li>
+          <li>示例：5GB/天×4天，活动价约¥27</li>
+        </ul>
+      </div>
+      <div class="plan-coupon">
+        <div><div class="label">优惠码</div><div class="code mono" id="c-sa">SUPER0000</div></div>
+        <button class="copy-btn" onclick="copyCode('c-sa',this)">复制</button>
+      </div>
+      <div class="plan-links">
+        <a href="#tab-switcher" onclick="switchTabByLink('superalink')">查看价目表 →</a>
+        <a href="https://www.superalink.com/en/destination/aff/SUPER0000" target="_blank" rel="noopener">查看并购买套餐 →</a>
+      </div>
+      <p class="price-note">* 价格以官方实时页面为准</p>
+    </div>
+
+    <div class="plan-card">
+      <div class="plan-body">
+        <div class="plan-badge">St</div>
+        <div class="plan-name">Stellar eSIM</div>
+        <div class="plan-sub mono">档位最全 · 欧元计价</div>
+        <div class="feature-pill">🌐 AI自动分流：新加坡IP直连，非香港</div>
+        <ul class="plan-list">
+          <li>从100MB到50GB共17档，颗粒度是四家里最细的</li>
+          <li>5GB/30天为官网"最受欢迎"档位，约€1.65起</li>
+          <li>50GB/180天长效档，比30天版本时长翻6倍仅多付€7.28</li>
+          <li>官网以欧元结算，付款需支持外币卡/PayPal</li>
+        </ul>
+      </div>
+      <div class="plan-links" style="padding-top:16px;border-top:1px solid var(--line);margin-top:auto;">
+        <a href="#tab-switcher" onclick="switchTabByLink('stellar')">查看价目表 →</a>
+        <a href="https://stellarsecurity.com/stellar-esim/china-esim?aff_session=u2ASY2rFP07hvct78w1THQ9FxkAhdeGPnll2lgvu&code=ESIMCN&src=x.com&campaign=Jaylen&product=DIGITAL%20Product" target="_blank" rel="noopener">查看并购买套餐 →</a>
+      </div>
+      <p class="price-note">* 价格以官方实时页面为准</p>
+    </div>
+
+    <div class="plan-card">
+      <div class="plan-body">
+        <div class="plan-badge">CC</div>
+        <div class="plan-name">esim.cc 年卡</div>
+        <div class="plan-sub mono">长期主力 · 国内支付友好</div>
+        <ul class="plan-list">
+          <li>100GB/365天，官网约¥339，9折码后约¥305</li>
+          <li>支持支付宝、银联及常见银行卡付款</li>
+          <li>中国移动4/5G网络，ChatGPT/Claude可用</li>
+          <li>用户实测NSA 5G可达100Mbps+，部分线路经香港/新加坡出口</li>
+        </ul>
+      </div>
+      <div class="plan-coupon">
+        <div><div class="label">优惠码</div><div class="code mono" id="c-cc">ESIMDOTCC</div></div>
+        <button class="copy-btn" onclick="copyCode('c-cc',this)">复制</button>
+      </div>
+      <div class="plan-links">
+        <a href="#tab-switcher" onclick="switchTabByLink('esimcc')">查看价目表 →</a>
+        <a href="https://www.esim.cc/?affiliate=ESIMDOTCC" target="_blank" rel="noopener">查看套餐 →</a>
+      </div>
+      <p class="price-note">* 价格以官方实时页面为准</p>
+    </div>
+
+    <div class="plan-card">
+      <div class="plan-body">
+        <div class="plan-badge">B</div>
+        <div class="plan-name">BNESIM</div>
+        <div class="plan-sub mono">永不过期 · 防失联备用</div>
+        <ul class="plan-list">
+          <li>提供永不过期流量类型，用多少扣多少</li>
+          <li>50GB永不过期套餐官网约¥194，用码后约¥156</li>
+          <li>无需中国实名，适合长期备用</li>
+          <li>中国移动5G，ChatGPT/TikTok可用</li>
+        </ul>
+      </div>
+      <div class="plan-coupon">
+        <div><div class="label">推荐码</div><div class="code mono" id="c-bn">EX90L2SS</div></div>
+        <button class="copy-btn" onclick="copyCode('c-bn',this)">复制</button>
+      </div>
+      <div class="plan-links">
+        <a href="#tab-switcher" onclick="switchTabByLink('bnesim')">查看价目表 →</a>
+        <a href="https://apps.bnesim.com/?esim_app=1" target="_blank" rel="noopener">使用推荐码首单减免3欧元 →</a>
+      </div>
+      <p class="price-note">* 价格以官方实时页面为准</p>
+    </div>
+
+    <div class="plan-card">
+      <div class="plan-body">
+        <div class="plan-badge">RG</div>
+        <div class="plan-name">RedteaGO</div>
+        <div class="plan-sub mono">按天无限流量 · 双出口可选</div>
+        <ul class="plan-list">
+          <li>基础/高级两档"无限流量"按天计费，US$0.70–4.90/天</li>
+          <li>定额套餐分两种出口：HK+SG IP（配Gemini/TikTok/GPT）与SG IP（配Claude/Apple AI）</li>
+          <li>多档"限时特惠"，最高至100GB/365天</li>
+          <li>App内Top up随时加购，无需重新下单</li>
+        </ul>
+      </div>
+      <div class="plan-links" style="padding-top:16px;border-top:1px solid var(--line);margin-top:auto;">
+        <a href="#tab-switcher" onclick="switchTabByLink('redteago')">查看价目表 →</a>
+        <a href="#" target="_blank" rel="noopener">查看套餐 →</a>
+      </div>
+      <p class="price-note">* 价格以官方实时页面为准</p>
+    </div>
+
+  </div>
+
+  <p class="disclaimer">* 优惠码、活动价、网络出口与AI服务可用性可能调整，速度与分流描述来自实际使用体验，不代表运营商固定承诺，请以下单页和实际分配线路为准。⚠️ Superalink官网提示该产品不供中国大陆居民购买及使用，办理前请自行核实。</p>
+
+  <div class="brand-tabs" id="tab-switcher">
+    <button class="brand-tab active" data-tab="superalink" onclick="switchTab('superalink',this)">Superalink</button>
+    <button class="brand-tab" data-tab="stellar" onclick="switchTab('stellar',this)">Stellar</button>
+    <button class="brand-tab" data-tab="esimcc" onclick="switchTab('esimcc',this)">esim.cc</button>
+    <button class="brand-tab" data-tab="bnesim" onclick="switchTab('bnesim',this)">BNESIM</button>
+    <button class="brand-tab" data-tab="redteago" onclick="switchTab('redteago',this)">RedteaGO</button>
+    <button class="brand-tab jump" data-tab="summary" onclick="switchTab('summary',this)">⚖️ 横向对比</button>
+  </div>
+
+  <!-- ============================================================
+       Superalink 详细价目表（默认显示）
+       ============================================================ -->
+  <div class="tab-panel" id="panel-superalink">
+    <p class="pick-note" style="margin-bottom:16px;">按"每日额度 × 天数"计费，短期大流量场景更划算，8折码 <b class="mono">SUPER0000</b> 可叠加。</p>
+    <div class="compare-wrap">
+      <table class="compare">
+        <thead><tr><th>套餐</th><th>高速流量</th><th>有效期</th><th>官网价</th><th>8折后</th></tr></thead>
+        <tbody>
+          <tr><th>500MB/天 × 4天</th><td>共2GB</td><td>4天</td><td>¥7.00</td><td>¥5.60</td></tr>
+          <tr><th>1GB/天 × 4天</th><td>共4GB</td><td>4天</td><td>¥13.00</td><td>¥10.40</td></tr>
+          <tr><th>2GB/天 × 4天</th><td>共8GB</td><td>4天</td><td>¥21.00</td><td>¥16.80</td></tr>
+          <tr><th>3GB/天 × 4天</th><td>共12GB</td><td>4天</td><td>¥27.00</td><td>¥21.60</td></tr>
+          <tr><th>5GB/天 × 1天</th><td>5GB</td><td>1天</td><td>¥9.00</td><td>¥7.20</td></tr>
+          <tr><th>5GB/天 × 4天</th><td class="cell-good">共20GB</td><td>4天</td><td>¥34.00</td><td>¥27.20</td></tr>
+          <tr><th>5GB/天 × 7天</th><td>共35GB</td><td>7天</td><td>¥59.00</td><td>¥47.20</td></tr>
+          <tr><th>5GB/天 × 10天</th><td>共50GB</td><td>10天</td><td>¥83.00</td><td>¥66.40</td></tr>
+          <tr><th>5GB/天 × 30天</th><td class="cell-good">共150GB</td><td>30天</td><td>¥222.00</td><td>¥177.60</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="disclaimer">✅ 中国移动(CMCC) 3/4/5G · 购买后180天内需激活 · 每日高速额度用完后降速 · 热点每天限2GB · 无需eKYC实名。⚠️ 官网提示该产品不供中国大陆居民购买及使用，请自行核实办理资格。</p>
+  </div>
+
+  <!-- ============================================================
+       Stellar eSIM 详细价目表（默认隐藏）—— 17档
+       ============================================================ -->
+  <div class="tab-panel" id="panel-stellar" style="display:none;">
+    <p class="pick-note" style="margin-bottom:16px;">官网以欧元结算，档位是四家里最全的，从100MB到50GB共17档。人民币价格按约¥7.8/€换算仅供参考，实际以官网结算页显示金额为准。</p>
+    <div class="compare-wrap">
+      <table class="compare">
+        <thead><tr><th>流量</th><th>有效期</th><th>官网价(EUR)</th><th>约合人民币</th><th>备注</th></tr></thead>
+        <tbody>
+          <tr><th>50GB</th><td>180天</td><td>€18.50</td><td>约¥144</td><td class="cell-good">比30天版本时长×6，只多€7.28</td></tr>
+          <tr><th>50GB</th><td>30天</td><td>€11.22</td><td>约¥88</td><td>—</td></tr>
+          <tr><th>50GB</th><td>30天</td><td>€18.88</td><td>约¥147</td><td>—</td></tr>
+          <tr><th>20GB</th><td>30天</td><td>€5.27</td><td>约¥41</td><td>—</td></tr>
+          <tr><th>20GB</th><td>30天</td><td>€8.95</td><td>约¥70</td><td>—</td></tr>
+          <tr><th>10GB</th><td>30天</td><td>€3.02</td><td>约¥24</td><td>—</td></tr>
+          <tr><th>10GB</th><td>30天</td><td>€4.35</td><td>约¥34</td><td>—</td></tr>
+          <tr><th>5GB</th><td>30天</td><td class="cell-good">€1.65</td><td class="cell-good">约¥13</td><td class="cell-good">官网标注"最受欢迎"</td></tr>
+          <tr><th>5GB</th><td>30天</td><td>€2.27</td><td>约¥18</td><td>官网标注"最受欢迎"</td></tr>
+          <tr><th>3GB</th><td>30天</td><td>€0.54</td><td>约¥4</td><td>—</td></tr>
+          <tr><th>3GB</th><td>30天</td><td>€1.62</td><td>约¥13</td><td>—</td></tr>
+          <tr><th>3GB</th><td>15天</td><td>€1.05</td><td>约¥8</td><td>—</td></tr>
+          <tr><th>3GB</th><td>15天</td><td>€1.49</td><td>约¥12</td><td>—</td></tr>
+          <tr><th>1GB</th><td>7天</td><td>€0.65</td><td>约¥5</td><td>—</td></tr>
+          <tr><th>1GB</th><td>7天</td><td>€0.81</td><td>约¥6</td><td>—</td></tr>
+          <tr><th>500MB</th><td>7天</td><td>€0.74</td><td>约¥6</td><td>—</td></tr>
+          <tr><th>100MB</th><td>7天</td><td>€0.74</td><td>约¥6</td><td>单价最高，不划算</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="disclaimer">✅ 档位最细，几乎每个数据量级都有对应选项 · 可在套餐使用期内随时加购流量，日票类档位不支持加购 · 需要外币支付方式（信用卡/PayPal/境外U卡）。💡 从人民币折算价看，5GB/30天（€1.65约¥13）单价最划算；短期小流量（100MB/500MB）单价明显偏高，不建议单独购买。</p>
+  </div>
+
+  <!-- ============================================================
+       esim.cc 详细价目表
+       ============================================================ -->
+  <div class="tab-panel" id="panel-esimcc" style="display:none;">
+    <p class="pick-note" style="margin-bottom:16px;">日票适合短期出行按天计费，定额套餐适合长期使用，9折码 <b class="mono">ESIMDOTCC</b> 可叠加。</p>
+    <div class="compare-wrap">
+      <table class="compare">
+        <thead><tr><th>套餐</th><th>流量</th><th>有效期</th><th>官网价</th><th>9折后</th></tr></thead>
+        <tbody>
+          <tr><th>日票 · 1天</th><td>每天2GB高速，超量后128kbps不限量</td><td>1天</td><td>约¥20</td><td>约¥18</td></tr>
+          <tr><th>日票 · 3天</th><td>同上</td><td>3天</td><td>约¥41</td><td>约¥37</td></tr>
+          <tr><th>日票 · 5天</th><td>同上</td><td>5天</td><td>约¥68</td><td>约¥61</td></tr>
+          <tr><th>日票 · 7天</th><td>同上</td><td>7天</td><td>约¥95</td><td>约¥86</td></tr>
+          <tr><th>日票 · 15天</th><td>同上</td><td>15天</td><td>约¥190</td><td>约¥171</td></tr>
+          <tr><th>日票 · 30天</th><td>同上</td><td>30天</td><td>约¥340</td><td>约¥306</td></tr>
+          <tr><th>定额 · 1GB</th><td>1GB</td><td>30天</td><td>约¥11</td><td>约¥10</td></tr>
+          <tr><th>定额 · 5GB</th><td>5GB</td><td>30天</td><td>约¥33</td><td>约¥30</td></tr>
+          <tr><th>定额 · 10GB</th><td>10GB</td><td>30天</td><td>约¥39</td><td>约¥35</td></tr>
+          <tr><th>定额 · 30GB</th><td>30GB</td><td>90天</td><td>约¥119</td><td>约¥107</td></tr>
+          <tr><th>定额 · 50GB</th><td>50GB</td><td>180天</td><td>约¥176</td><td>约¥158</td></tr>
+          <tr><th>定额 · 100GB</th><td class="cell-good">100GB</td><td>365天</td><td>约¥339</td><td class="cell-good">约¥305</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="disclaimer">✅ 中国移动4/5G · 日票每天2GB高速后降至128kbps · 定额套餐覆盖30–365天 · 支持热点 · 购买后90天内需激活。</p>
+  </div>
+
+  <!-- ============================================================
+       BNESIM 详细价目表（默认隐藏）
+       ============================================================ -->
+  <div class="tab-panel" id="panel-bnesim" style="display:none;">
+    <p class="pick-note" style="margin-bottom:16px;">同一页面可选30天限期套餐或永不过期套餐，官网以欧元计价，首单3欧元减免码 <b class="mono">EX90L2SS</b> ，实际以结算页为准。</p>
+    <div class="compare-wrap">
+      <table class="compare">
+        <thead><tr><th>套餐</th><th>流量</th><th>有效期</th><th>官网价</th><th>8折后</th></tr></thead>
+        <tbody>
+          <tr><th>限期 · 1GB</th><td>1GB</td><td>30天</td><td>约¥19 (€2.49)</td><td>约¥16</td></tr>
+          <tr><th>限期 · 5GB</th><td>5GB</td><td>30天</td><td>约¥35 (€4.49)</td><td>约¥28</td></tr>
+          <tr><th>限期 · 20GB</th><td>20GB</td><td>30天</td><td>约¥78 (€9.99)</td><td>约¥62</td></tr>
+          <tr><th>限期 · 50GB</th><td>50GB</td><td>30天</td><td>约¥156 (€19.99)</td><td>约¥124</td></tr>
+          <tr><th>永不过期 · 1GB</th><td>1GB</td><td>永不过期</td><td>约¥23 (€2.99)</td><td>约¥19</td></tr>
+          <tr><th>永不过期 · 10GB</th><td>10GB</td><td>永不过期</td><td>约¥58 (€7.49)</td><td>约¥47</td></tr>
+          <tr><th>永不过期 · 50GB</th><td class="cell-good">50GB</td><td>永不过期</td><td>约¥194 (€24.99)</td><td class="cell-good">约¥156</td></tr>
+          <tr><th>永不过期 · 100GB</th><td>100GB</td><td>永不过期</td><td>约¥389 (€49.99)</td><td>约¥311</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="disclaimer">✅ 无需中国大陆实名 · 定额按总量扣除，用完为止 · 外币按当期汇率折算，仅供参考，请以下单页实时结算价为准。</p>
+  </div>
+
+  <!-- ============================================================
+       RedteaGO 详细价目表（默认隐藏）—— 14档
+       ============================================================ -->
+  <div class="tab-panel" id="panel-redteago" style="display:none;">
+    <p class="pick-note" style="margin-bottom:16px;">同一流量档位有两种出口可选：<b>HK+SG IP</b>（价格更低，支持Gemini/TikTok/GPT）与 <b>SG IP</b>（价格略高，支持Claude/Apple AI），按你需要访问的服务选对应档位。App内按天无限流量另有两档。优惠码：暂无。</p>
+    <div class="compare-wrap">
+      <table class="compare">
+        <thead><tr><th>套餐</th><th>出口/可用服务</th><th>官网价</th><th>原价</th></tr></thead>
+        <tbody>
+          <tr><th>基础 · 无限流量</th><td>按天计费，适合轻度用户</td><td>US$0.70/天</td><td>—</td></tr>
+          <tr><th>高级 · 无限流量</th><td>按天计费，适合重度用户</td><td>US$4.90/天</td><td>—</td></tr>
+          <tr><th>500MB · 7天</th><td>HK+SG IP / Gemini / TikTok / GPT</td><td>US$0.95</td><td>US$1.17</td></tr>
+          <tr><th>1GB · 30天</th><td>HK+SG IP / Gemini / TikTok / GPT</td><td>US$1.80</td><td>US$2.20</td></tr>
+          <tr><th>3GB · 30天</th><td>HK+SG IP / Gemini / TikTok / GPT</td><td>US$4.05</td><td>US$6.00</td></tr>
+          <tr><th>5GB · 30天</th><td>HK+SG IP / Gemini / TikTok / GPT</td><td>US$5.31</td><td>US$9.00</td></tr>
+          <tr><th>10GB · 60天</th><td>HK+SG IP / Gemini / TikTok / GPT</td><td>US$5.85</td><td>US$14.00</td></tr>
+          <tr><th>10GB · 60天</th><td class="cell-good">SG IP / Claude / Apple AI</td><td>US$8.00</td><td>US$16.90</td></tr>
+          <tr><th>20GB · 90天</th><td>HK+SG IP / Gemini / TikTok / GPT</td><td>US$11.16</td><td>US$12.40</td></tr>
+          <tr><th>20GB · 90天</th><td class="cell-good">SG IP / Claude / Apple AI</td><td>US$15.00</td><td>US$16.00</td></tr>
+          <tr><th>50GB · 365天</th><td>HK+SG IP / Gemini / TikTok / GPT</td><td class="cell-good">US$26.19</td><td>US$58.00</td></tr>
+          <tr><th>50GB · 365天</th><td class="cell-good">SG IP / Claude / Apple AI</td><td>US$29.90</td><td>US$39.90</td></tr>
+          <tr><th>100GB · 365天</th><td>HK+SG IP / Gemini / TikTok / GPT</td><td>US$49.90</td><td>US$59.90</td></tr>
+          <tr><th>100GB · 365天</th><td class="cell-good">SG IP / Claude / Apple AI</td><td>US$59.00</td><td>US$69.00</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="disclaimer">✅ 有效期自首次连接开始计时，部分套餐为安装即激活 · 定额套餐支持App内Top up加购，无需重新下单 · 需要SG IP出口访问Claude/Apple AI的，选对应"SG IP"档位而不是更便宜的"HK+SG IP"档位。* 价格以官方实时页面为准。</p>
+  </div>
+
+  <!-- ============================================================
+       五家横向对比汇总表（默认隐藏）
+       ============================================================ -->
+  <div class="tab-panel" id="panel-summary" style="display:none;">
+    <div class="compare-wrap">
+      <table class="compare">
+        <thead><tr><th>维度</th><th>Superalink</th><th>Stellar</th><th>esim.cc</th><th>BNESIM</th><th>RedteaGO</th></tr></thead>
+        <tbody>
+          <tr><th>最低门槛</th><td class="cell-good">500MB/天×4天，8折后¥5.60</td><td>—</td><td>1GB/30天，9折后约¥10</td><td>限期1GB/30天，8折后约¥16</td><td>—</td></tr>
+          <tr><th>套餐结构</th><td>500MB–5GB/天，可选1–30天</td><td>—</td><td>日票2GB/天 + 1–100GB定额</td><td>30天限期 + 永不过期两类</td><td>—</td></tr>
+          <tr><th>短期大流量</th><td>5GB/天×7天，8折后¥47.20</td><td>—</td><td>7天共14GB高速，9折后约¥86</td><td>50GB/30天，8折后约¥124</td><td>—</td></tr>
+          <tr><th>长期/防失联</th><td>最长30天，不适合长期保底</td><td>—</td><td class="cell-good">100GB/365天，9折后约¥305</td><td class="cell-good">50GB永不过期，8折后约¥156</td><td>—</td></tr>
+          <tr><th>超量规则</th><td>每日高速额度后降速</td><td>—</td><td>日票每天2GB后降至128kbps</td><td>定额按总量扣除，另有不限量档</td><td>—</td></tr>
+          <tr><th>激活/有效期</th><td>购买后180天内激活</td><td>—</td><td>购买后90天内激活，最长365天</td><td>可选30天或永不过期</td><td>—</td></tr>
+          <tr><th>网络与热点</th><td>CMCC 3/4/5G，热点每天限2GB</td><td>—</td><td class="cell-good">中国移动4/5G，支持热点</td><td>官方页面未标明热点限制</td><td>—</td></tr>
+          <tr><th>购买限制</th><td>官网提示不供大陆支付方式购买</td><td>—</td><td class="cell-good">官网未见大陆居民限制</td><td class="cell-good">官网未见大陆居民限制</td><td>—</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="disclaimer">💡 结论部分留给你自己填写。Stellar、RedteaGO两列先占位为"—"，细节数据你补充后即可。</p>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div><a href="index.html" class="logo" style="margin-bottom:12px;display:flex;">云居民</a><p style="font-size:13.5px;max-width:340px;">出海必备的号码、卡、网络、工具，实测后再推荐给你。</p></div>
+      <div><h4>eSIM</h4><ul><li><a href="esim-card.html">实体卡</a></li><li><a href="esim.html">流量套餐</a></li><li><a href="keepnumber.html">保号卡</a></li></ul></div>
+      <div><h4>更多</h4><ul><li><a href="fxcard.html">境外银行卡</a></li><li><a href="network.html">科学上网</a></li></ul></div>
+      <div><h4>关于</h4><ul><li><a href="index.html#faq">常见问题</a></li><li><a href="contact.html">联系我们</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 云居民 yunjumin.de</span><span>内容仅供参考，请以官方最新信息为准</span></div>
+  </div>
+</footer>
+
+<script>
+function copyCode(id, btn){
+  var text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text).then(function(){
+    var original = btn.innerText; btn.innerText='已复制'; btn.classList.add('copied');
+    setTimeout(function(){ btn.innerText=original; btn.classList.remove('copied'); },1500);
+  });
+}
+
+/* 标签切换：显示对应品牌价目表，同时高亮当前标签按钮 */
+function switchTab(tabName, btn){
+  document.querySelectorAll('.tab-panel').forEach(function(panel){
+    panel.style.display = 'none';
+  });
+  document.getElementById('panel-' + tabName).style.display = 'block';
+  document.querySelectorAll('.brand-tab').forEach(function(t){
+    t.classList.remove('active');
+  });
+  btn.classList.add('active');
+}
+
+/* 从推荐卡片点击"查看价目表"时：切换到对应标签 + 滚动到标签区域 */
+function switchTabByLink(tabName){
+  document.querySelectorAll('.tab-panel').forEach(function(panel){
+    panel.style.display = 'none';
+  });
+  document.getElementById('panel-' + tabName).style.display = 'block';
+  document.querySelectorAll('.brand-tab').forEach(function(t){
+    t.classList.remove('active');
+    if(t.getAttribute('data-tab') === tabName){ t.classList.add('active'); }
+  });
+}
+</script>
+</body>
+</html>

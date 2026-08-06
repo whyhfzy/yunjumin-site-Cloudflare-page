@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>云居民 · 出海工具箱</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700;900&family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="analytics.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav-inner">
+    <a href="index.html" class="logo"><span class="dot"></span><span class="logo-text">云居民·的<br><span class="logo-highlight">登机牌</span></span></a>
+    <nav>
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单">☰</button>
+      <ul id="navList">
+        <li><a href="esim-card.html">eSIM实体卡</a></li>
+        <li><a href="esim.html">eSIM流量</a></li>
+        <li><a href="keepnumber.html">eSIM保号</a></li>
+        <li><a href="fxcard.html">境外银行卡</a></li>
+        <li><a href="network.html">科学上网</a></li>
+        <li><a href="index.html#faq">常见问题</a></li>
+        <li><a href="contact.html">联系我们</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<script>
+  document.getElementById('navToggle').addEventListener('click', function(){
+    document.getElementById('navList').classList.toggle('open');
+  });
+</script>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div class="hero-eyebrow">BOARDING · 出海工具箱</div>
+    <h1>境外：号码、流量、银行/U卡、网络<br>一张<span>登机牌</span>说清楚</h1>
+    <p class="lead">从落地那一刻起要用到的工具，我们都试过、比过、踩过坑——把最值得用的留给你。</p>
+    <div class="hero-actions">
+      <a href="esim-card.html" class="btn btn-primary">查看推荐方案</a>
+      <a href="#faq" class="btn btn-ghost">先看常见问题</a>
+    </div>
+    <div class="boarding-strip">
+      <div><b>5+</b>覆盖品类</div>
+      <div><b>持续更新</b>优惠码库</div>
+      <div><b>实测</b>非广告软文</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="esim">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-eyebrow">Gate 01 · eSIM</div>
+      <h2>eSIM 实体卡 &amp; 流量套餐</h2>
+      <p>不支持eSIM的手机怎么用eSIM，落地怎么选流量，两个问题分别说清楚。</p>
+    </div>
+    <div class="ticket-grid">
+      <div class="ticket">
+        <div class="ticket-main">
+          <span class="ticket-tag">写卡容器</span>
+          <h3>eSIM 实体卡横评</h3>
+          <p>ESTK / 9eSIM / XeSIM 三款主流产品逐项对比，国行iPhone怎么选一目了然。</p>
+        </div>
+        <div class="ticket-stub">
+          <div class="price mono">3款</div>
+          <div class="price-note">横评</div>
+          <a href="esim-card.html">查看 →</a>
+        </div>
+      </div>
+      <div class="ticket">
+        <div class="ticket-main">
+          <span class="ticket-tag">大陆流量</span>
+          <h3>eSIM 流量套餐对比</h3>
+          <p>esim.cc / Superalink / BNESIM / Stellar / RedteaGO 五家中国大陆套餐横向对比，长期短期都有推荐。</p>
+        </div>
+        <div class="ticket-stub">
+          <div class="price mono">5家</div>
+          <div class="price-note">对比</div>
+          <a href="esim.html">查看 →</a>
+        </div>
+      </div>
+      <div class="ticket">
+        <div class="ticket-main">
+          <span class="ticket-tag">长期保号</span>
+          <h3>eSIM 保号卡指南</h3>
+          <p>低成本长期持有海外号码，注册WhatsApp/Telegram、收境外验证码都靠它。</p>
+        </div>
+        <div class="ticket-stub">
+          <div class="price mono">6款</div>
+          <div class="price-note">对比</div>
+          <a href="keepnumber.html">查看 →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="card" style="background:var(--white);">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-eyebrow">Gate 02 · Cards</div>
+      <h2>境外银行卡 &amp; U卡</h2>
+      <p>解决跨境收付款、订阅扣款、资金出入的最后一公里。</p>
+    </div>
+    <div class="ticket-grid">
+      <div class="ticket">
+        <div class="ticket-main">
+          <span class="ticket-tag">换汇+U卡</span>
+          <h3>境外银行卡横评</h3>
+          <p>Wise / OKX / Ether.fi / Monzo / N26 等10款金融工具，换汇、境外账户、消费返现全覆盖。</p>
+        </div>
+        <div class="ticket-stub">
+          <div class="price mono">10款</div>
+          <div class="price-note">对比</div>
+          <a href="fxcard.html">查看 →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="network">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-eyebrow">Gate 03 · Network</div>
+      <h2>科学上网</h2>
+      <p>先说清楚：以下内容仅面向使用场景说明，请遵守当地法律法规，自行判断是否适合使用。</p>
+    </div>
+    <div class="ticket-grid">
+      <div class="ticket">
+        <div class="ticket-main">
+          <span class="ticket-tag">机场+住宅IP</span>
+          <h3>机场与住宅IP推荐</h3>
+          <p>4家风格迥异的机场，加2家住宅代理IP服务商，按预算和场景选。</p>
+        </div>
+        <div class="ticket-stub">
+          <div class="price mono">6款</div>
+          <div class="price-note">对比</div>
+          <a href="network.html">查看 →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section coupon-section">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-eyebrow">Coupon Desk</div>
+      <h2>优惠码 / 推荐码速查</h2>
+      <p>点击即可复制，具体使用方式和详细信息见各产品页面。</p>
+    </div>
+
+    <div class="coupon-subhead">eSIM实体卡</div>
+    <div class="coupon-grid">
+      <div class="coupon-card">
+        <div><div class="name">XeSIM</div><div class="desc">官网结算输入</div></div>
+        <div class="coupon-actions">
+          <button class="coupon-code" onclick="navigator.clipboard.writeText('JAYLEN90');this.innerText='已复制'">JAYLEN90</button>
+        <a class="coupon-site-link" href="https://xesim.cc/?DIST=RUZCFVo%3D" target="_blank" rel="noopener">官网 →</a>
+        </div>
+      </div>
+      <div class="coupon-card">
+        <div><div class="name">ESTK</div><div class="desc">官网结算输入</div></div>
+        <div class="coupon-actions">
+          <button class="coupon-code" onclick="navigator.clipboard.writeText('jzb');this.innerText='已复制'">jzb</button>
+        <a class="coupon-site-link" href="https://store.estk.me/?code=jzb" target="_blank" rel="noopener">官网 →</a>
+        </div>
+      </div>
+      <div class="coupon-card">
+        <div><div class="name">9eSIM</div><div class="desc">官网结算输入</div></div>
+        <div class="coupon-actions">
+          <button class="coupon-code" onclick="navigator.clipboard.writeText('WOQU2');this.innerText='已复制'">WOQU2</button>
+        <a class="coupon-site-link" href="https://www.9esim.com/?coupon=WOQU2" target="_blank" rel="noopener">官网 →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="coupon-subhead">eSIM流量</div>
+    <div class="coupon-grid">
+      <div class="coupon-card">
+        <div><div class="name">esim.cc</div><div class="desc">9折优惠码</div></div>
+        <div class="coupon-actions">
+          <button class="coupon-code" onclick="navigator.clipboard.writeText('ESIMDOTCC');this.innerText='已复制'">ESIMDOTCC</button>
+        <a class="coupon-site-link" href="https://www.esim.cc/?affiliate=ESIMDOTCC" target="_blank" rel="noopener">官网 →</a>
+        </div>
+      </div>
+      <div class="coupon-card">
+        <div><div class="name">Superalink</div><div class="desc">8折优惠码</div></div>
+        <div class="coupon-actions">
+          <button class="coupon-code" onclick="navigator.clipboard.writeText('SUPER0000');this.innerText='已复制'">SUPER0000</button>
+        <a class="coupon-site-link" href="https://www.superalink.com/en/destination/aff/SUPER0000" target="_blank" rel="noopener">官网 →</a>
+        </div>
+      </div>
+      <div class="coupon-card">
+        <div><div class="name">BNESIM</div><div class="desc">首单减免推荐码</div></div>
+        <div class="coupon-actions">
+          <button class="coupon-code" onclick="navigator.clipboard.writeText('EX90L2SS');this.innerText='已复制'">EX90L2SS</button>
+        <a class="coupon-site-link" href="https://apps.bnesim.com/?esim_app=1" target="_blank" rel="noopener">官网 →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="coupon-subhead">eSIM保号</div>
+    <div class="coupon-grid">
+      <div class="coupon-card">
+        <div><div class="name">Simyo</div><div class="desc">购买赠€5推荐码</div></div>
+        <div class="coupon-actions">
+          <button class="coupon-code" onclick="navigator.clipboard.writeText('NRVBWR');this.innerText='已复制'">NRVBWR</button>
+        <a class="coupon-site-link" href="https://www.simyo.nl/sim-only/bestellen?referer=NRVBWR" target="_blank" rel="noopener">官网 →</a>
+        </div>
+      </div>
+      <div class="coupon-card">
+        <div><div class="name">CTExcel EU</div><div class="desc">购买时填写</div></div>
+        <div class="coupon-actions">
+          <button class="coupon-code" onclick="navigator.clipboard.writeText('IHCJJM');this.innerText='已复制'">IHCJJM</button>
+        <a class="coupon-site-link" href="https://www.ctexcel.com/uk/buyCard/buyCardPackage/1?recommendCode=IHCJJM" target="_blank" rel="noopener">官网 →</a>
+        </div>
+      </div>
+      <div class="coupon-card">
+        <div><div class="name">Saily</div><div class="desc">获赠$5余额</div></div>
+        <div class="coupon-actions">
+          <button class="coupon-code" onclick="navigator.clipboard.writeText('JAYLENNG');this.innerText='已复制'">JAYLENNG</button>
+        <a class="coupon-site-link" href="https://saily.com/" target="_blank" rel="noopener">官网 →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="coupon-subhead">境外银行卡 &amp; U卡</div>
+    <div class="coupon-grid">
+      <div class="coupon-card">
+        <div><div class="name">Wise</div><div class="desc">推荐码</div></div>
+        <div class="coupon-actions">
+          <button class="coupon-code" onclick="navigator.clipboard.writeText('jianhew1');this.innerText='已复制'">jianhew1</button>
+        <a class="coupon-site-link" href="https://wise.com/invite/ilpc/jianhew1" target="_blank" rel="noopener">官网 →</a>
+        </div>
+      </div>
+      <div class="coupon-card">
+        <div><div class="name">iFast</div><div class="desc">推荐码</div></div>
+        <div class="coupon-actions">
+          <button class="coupon-code" onclick="navigator.clipboard.writeText('jianhew8722');this.innerText='已复制'">jianhew8722</button>
+        <a class="coupon-site-link" href="https://www.ifastgb.com/tellafriend/jianhew8722" target="_blank" rel="noopener">官网 →</a>
+        </div>
+      </div>
+      <div class="coupon-card">
+        <div><div class="name">OKX</div><div class="desc">10%返佣推荐码</div></div>
+        <div class="coupon-actions">
+          <button class="coupon-code" onclick="navigator.clipboard.writeText('PERCENT10');this.innerText='已复制'">PERCENT10</button>
+        <a class="coupon-site-link" href="https://oyidl.net/ul/6CngT5?channelId=PERCENT10" target="_blank" rel="noopener">官网 →</a>
+        </div>
+      </div>
+      <div class="coupon-card">
+        <div><div class="name">Starryblu</div><div class="desc">推荐码</div></div>
+        <div class="coupon-actions">
+          <button class="coupon-code" onclick="navigator.clipboard.writeText('MDDK002');this.innerText='已复制'">MDDK002</button>
+        <a class="coupon-site-link" href="https://sg.starryblu.com/x/6Rxesn7r" target="_blank" rel="noopener">官网 →</a>
+        </div>
+      </div>
+      <div class="coupon-card">
+        <div><div class="name">Ether.fi</div><div class="desc">推荐码</div></div>
+        <div class="coupon-actions">
+          <button class="coupon-code" onclick="navigator.clipboard.writeText('etherfive');this.innerText='已复制'">etherfive</button>
+        <a class="coupon-site-link" href="https://ether.fi/@etherfive" target="_blank" rel="noopener">官网 →</a>
+        </div>
+      </div>
+      <div class="coupon-card">
+        <div><div class="name">Bitget Wallet</div><div class="desc">邀请码</div></div>
+        <div class="coupon-actions">
+          <button class="coupon-code" onclick="navigator.clipboard.writeText('onecards');this.innerText='已复制'">onecards</button>
+        <a class="coupon-site-link" href="https://web3.bgw.live/share/s3TCE?inviteCode=onecards" target="_blank" rel="noopener">官网 →</a>
+        </div>
+      </div>
+      <div class="coupon-card">
+        <div><div class="name">Bybit Card</div><div class="desc">获赠€10推荐码</div></div>
+        <div class="coupon-actions">
+          <button class="coupon-code" onclick="navigator.clipboard.writeText('VRPYEZR');this.innerText='已复制'">VRPYEZR</button>
+        <a class="coupon-site-link" href="https://www.bybit.eu/cards/?ref=VRPYEZR&source=applet_invite" target="_blank" rel="noopener">官网 →</a>
+        </div>
+      </div>
+      <div class="coupon-card">
+        <div><div class="name">Monzo</div><div class="desc">推荐码</div></div>
+        <div class="coupon-actions">
+          <button class="coupon-code" onclick="navigator.clipboard.writeText('wp696ztv');this.innerText='已复制'">wp696ztv</button>
+        <a class="coupon-site-link" href="https://join.monzo.com/c/wp696ztv" target="_blank" rel="noopener">官网 →</a>
+        </div>
+      </div>
+      <div class="coupon-card">
+        <div><div class="name">N26</div><div class="desc">推荐码</div></div>
+        <div class="coupon-actions">
+          <button class="coupon-code" onclick="navigator.clipboard.writeText('jianhew5164');this.innerText='已复制'">jianhew5164</button>
+        <a class="coupon-site-link" href="https://n26.com/r/jianhew5164?cid=F15&lang=en" target="_blank" rel="noopener">官网 →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="coupon-subhead">科学上网</div>
+    <div class="coupon-grid">
+      <div class="coupon-card">
+        <div><div class="name">V2FREE</div><div class="desc">邀请码</div></div>
+        <div class="coupon-actions">
+          <button class="coupon-code" onclick="navigator.clipboard.writeText('ZK7a');this.innerText='已复制'">ZK7a</button>
+        <a class="coupon-site-link" href="https://w1.soxo.top/auth/register?code=ZK7a" target="_blank" rel="noopener">官网 →</a>
+        </div>
+      </div>
+      <div class="coupon-card">
+        <div><div class="name">LM8O</div><div class="desc">邀请码</div></div>
+        <div class="coupon-actions">
+          <button class="coupon-code" onclick="navigator.clipboard.writeText('V7cR7qoF');this.innerText='已复制'">V7cR7qoF</button>
+        <a class="coupon-site-link" href="https://vip.lm8o.com/#/register?code=V7cR7qoF" target="_blank" rel="noopener">官网 →</a>
+        </div>
+      </div>
+      <div class="coupon-card">
+        <div><div class="name">魔戒 Mojie</div><div class="desc">邀请码</div></div>
+        <div class="coupon-actions">
+          <button class="coupon-code" onclick="navigator.clipboard.writeText('68qLt1tv');this.innerText='已复制'">68qLt1tv</button>
+        <a class="coupon-site-link" href="https://mojie.me/#/register?code=68qLt1tv" target="_blank" rel="noopener">官网 →</a>
+        </div>
+      </div>
+      <div class="coupon-card">
+        <div><div class="name">IPEqual</div><div class="desc">邀请码</div></div>
+        <div class="coupon-actions">
+          <button class="coupon-code" onclick="navigator.clipboard.writeText('fbdf77670e');this.innerText='已复制'">fbdf77670e</button>
+        <a class="coupon-site-link" href="https://www.ipequal.com/?ref=fbdf77670e" target="_blank" rel="noopener">官网 →</a>
+        </div>
+      </div>
+      <div class="coupon-card">
+        <div><div class="name">Webshare</div><div class="desc">邀请码</div></div>
+        <div class="coupon-actions">
+          <button class="coupon-code" onclick="navigator.clipboard.writeText('vt4jfyi3ag3b');this.innerText='已复制'">vt4jfyi3ag3b</button>
+        <a class="coupon-site-link" href="https://www.webshare.io/?referral_code=vt4jfyi3ag3b" target="_blank" rel="noopener">官网 →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="wrap" style="max-width:820px;">
+    <div class="section-head">
+      <div class="section-eyebrow">FAQ</div>
+      <h2>常见问题</h2>
+    </div>
+    <details class="faq-item">
+      <summary>eSIM实体卡是什么？国行手机能用吗？</summary>
+      <p>它是一张可插拔的eUICC芯片卡，插入不支持eSIM的手机（含国行等eSIM被禁用的机型）后，就能像eSIM手机一样下载、切换多个运营商Profile。详细横评见"eSIM实体卡"页面。</p>
+    </details>
+    <details class="faq-item">
+      <summary>eSIM实体卡、流量套餐、保号卡三者是什么关系？</summary>
+      <p>手机是载体，实体卡是容器（手机不支持eSIM时才需要），流量套餐是装进容器里的Profile，保号卡则是用来长期持有一个海外号码。四者可以自由组合。</p>
+    </details>
+    <details class="faq-item">
+      <summary>价格数据多久更新一次？</summary>
+      <p>各产品价格、优惠码会随官网调整，建议下单前以官网实时页面为准，本站数据仅供参考。</p>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo" style="margin-bottom:12px;display:flex;">云居民</a>
+        <p style="font-size:13.5px;max-width:340px;">出海必备的号码、卡、网络、工具，实测后再推荐给你。</p>
+      </div>
+      <div>
+        <h4>eSIM</h4>
+        <ul>
+          <li><a href="esim-card.html">实体卡</a></li>
+          <li><a href="esim.html">流量套餐</a></li>
+          <li><a href="keepnumber.html">保号卡</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>更多</h4>
+        <ul>
+          <li><a href="fxcard.html">境外银行卡</a></li>
+          <li><a href="network.html">科学上网</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于</h4>
+        <ul>
+          <li><a href="index.html#faq">常见问题</a></li>
+          <li><a href="contact.html">联系我们</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 云居民 yunjumin.de</span>
+      <span>内容仅供参考，请以官方最新信息为准</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>eSIM实体卡横评 · 云居民</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700;900&family=Noto+Sans+SC:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="analytics.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav-inner">
+    <a href="index.html" class="logo"><span class="dot"></span><span class="logo-text">云居民·的<br><span class="logo-highlight">登机牌</span></span></a>
+    <nav>
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单">☰</button>
+      <ul id="navList">
+        <li><a href="esim-card.html">eSIM实体卡</a></li>
+        <li><a href="esim.html">eSIM流量</a></li>
+        <li><a href="keepnumber.html">eSIM保号</a></li>
+        <li><a href="fxcard.html">境外银行卡</a></li>
+        <li><a href="network.html">科学上网</a></li>
+        <li><a href="index.html#faq">常见问题</a></li>
+        <li><a href="contact.html">联系我们</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<script>document.getElementById('navToggle').addEventListener('click',function(){document.getElementById('navList').classList.toggle('open');});</script>
+
+<div class="wrap page-head">
+  <div class="crumb">eSIM CARDS</div>
+  <h1>eSIM 实体卡：让不支持eSIM的手机也能用上eSIM</h1>
+  <p class="intro">eSIM实体卡本质是一张可反复写入配置文件的eUICC芯片卡，外形和普通SIM卡一样，插进卡槽后就能像原生eSIM手机一样下载、切换多个运营商的Profile——国行等eSIM功能被锁的机型是最常见的使用场景。下面是四款主流产品的横向对比。</p>
+</div>
+
+<div class="wrap">
+  <div class="pick-label">Product Lineup</div>
+  <div class="pick-title">几款主流产品怎么选</div>
+  <p class="pick-note">先看结论：国行iPhone用户优先考虑XeSIM或ESTK；喜欢折腾、想要开源工具链的选9eSIM；预算有限先试水可以看XeSIM入门款。</p>
+
+  <div class="plan-grid">
+
+     <div class="plan-card">
+      <div class="plan-body">
+        <div class="plan-badge">Xe</div>
+        <div class="plan-name">XeSIM</div>
+        <div class="plan-sub mono">X1 / X2 / X2 Pro · 三系统全覆盖</div>
+        <ul class="plan-list">
+          <li>App同时覆盖Android、iOS、HarmonyOS NEXT三大系统</li>
+          <li>X2 Pro支持纯iPhone独立写卡，不需要借安卓机</li>
+          <li>X1为入门款，限5次下载；X2起不限写入次数</li>
+          <li>内置GSMA认证证书，X2 Pro额外附带SeedLink</li>
+        </ul>
+      </div>
+      <div class="plan-coupon">
+        <div><div class="label">优惠码</div><div class="code mono" id="c-xesim">JAYLEN90</div></div>
+        <button class="copy-btn" onclick="copyCode('c-xesim',this)">复制</button>
+      </div>
+      <div class="plan-links">
+        <a href="#detail-table">看参数 →</a>
+        <a href="https://xesim.cc/?DIST=RUZCFVo%3D" target="_blank" rel="noopener">去官网 →</a>
+      </div>
+      <p class="price-note">* 价格以官方实时页面为准</p>
+    </div>
+    <div class="plan-card featured">
+      <div class="plan-body">
+        <div class="plan-badge">ES</div>
+        <div class="plan-name">ESTK</div>
+        <div class="plan-sub mono">C / Plus+ / Max · 生态最完整</div>
+        <ul class="plan-list">
+          <li>存储512KiB–1600KiB，Max版最多可存约60个Profile</li>
+          <li>iPhone可直接用系统自带STK菜单切卡，不需要额外装App</li>
+          <li>同时支持官方App与lpac、OpenEUICC等开源工具</li>
+          <li>配套读卡器可在电脑上管理，支持5G SA网络</li>
+        </ul>
+      </div>
+      <div class="plan-coupon">
+        <div><div class="label">优惠码</div><div class="code mono" id="c-estk">jzb</div></div>
+        <button class="copy-btn" onclick="copyCode('c-estk',this)">复制</button>
+      </div>
+      <div class="plan-links">
+        <a href="#detail-table">看参数 →</a>
+        <a href="https://store.estk.me/?code=jzb" target="_blank" rel="noopener">去官网 →</a>
+      </div>
+      <p class="price-note">* 价格以官方实时页面为准</p>
+    </div>
+
+    <div class="plan-card">
+      <div class="plan-body">
+        <div class="plan-badge">9e</div>
+        <div class="plan-name">9eSIM</div>
+        <div class="plan-sub mono">V0 / V0 Max / V3 · 开源生态</div>
+        <ul class="plan-list">
+          <li>存储480KB–1.5MB，不绑定账号，主打开放eUICC标准</li>
+          <li>兼容NekokoLPA、OpenEUICC、MiniLPA等社区工具</li>
+          <li>旗舰V3采用Kigen OS（英国制造），兼容主流eSIM服务商</li>
+          <li>V0 Max / V3 购买附赠1GB全球流量</li>
+        </ul>
+      </div>
+      <div class="plan-coupon">
+        <div><div class="label">优惠码</div><div class="code mono" id="c-9esim">WOQU2</div></div>
+        <button class="copy-btn" onclick="copyCode('c-9esim',this)">复制</button>
+      </div>
+      <div class="plan-links">
+        <a href="#detail-table">看参数 →</a>
+        <a href="https://www.9esim.com/?coupon=WOQU2" target="_blank" rel="noopener">去官网 →</a>
+      </div>
+      <p class="price-note">* 价格以官方实时页面为准</p>
+    </div>
+
+   
+
+
+  </div>
+
+  <p class="disclaimer">* 实际可存Profile数量取决于各运营商配置文件的大小（通常30–120KB），同一时刻只能启用一个Profile。价格与优惠码可能随时调整，请以各官网结算页为准。</p>
+
+  <div id="detail-table" class="compare-wrap">
+    <table class="compare">
+      <thead><tr><th>参数</th><th>ESTK</th><th>9eSIM</th><th>XeSIM</th></tr></thead>
+      <tbody>
+        <tr><th>型号</th><td>C / Plus+ / Max</td><td>V0 / V0 Max / V3</td><td>X1 / X2 / X2 Pro</td></tr>
+        <tr><th>参考价</th><td>约¥61–173</td><td>约¥102–163</td><td>约¥102–245</td></tr>
+        <tr><th>存储容量</th><td>512KiB–1600KiB</td><td>480KB–1.5MB</td><td>—</td></tr>
+        <tr><th>Profile上限</th><td class="cell-good">最高60（Max）</td><td>15 / 30 / 50</td><td>15 / 30</td></tr>
+        <tr><th>下载次数</th><td>不限</td><td>不限</td><td>X1限5次，X2起不限</td><td>—</td></tr>
+        <tr><th>切换方式</th><td>STK / 开源LPA / 读卡器</td><td>STK / Android App</td><td>STK / 官方App</td></tr>
+        <tr><th>iPhone友好度</th><td class="cell-good">高（STK直切+iOS直接下载）</td><td>中（管理需读卡器或STK）</td><td class="cell-good">X2 Pro高（免安卓）</td></tr>
+        <tr><th>特色</th><td>5G SA · SoftSIM</td><td>V0 Max/V3送1GB流量</td><td>X2 Pro含SeedLink</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="disclaimer">💡 一句话结论：国行iPhone优先看XeSIM或ESTK；想要开源自由折腾选9eSIM；预算有限先试水，XeSIM X1或9eSIM V0都在¥102左右。</p>
+</div>
+
+<section class="section">
+  <div class="wrap" style="max-width:820px;">
+    <div class="section-head">
+      <div class="section-eyebrow">Guide</div>
+      <h2>通用写卡流程</h2>
+    </div>
+    <div class="guide-card">
+      <h3>🚀 第一次用实体卡</h3>
+      <p class="guide-note">五步走，全程约10分钟，各品牌操作大同小异。</p>
+      <ol class="guide-steps">
+        <li><b>选卡并插入手机。</b>按上面的对比表挑一张适合你手机的卡，像普通SIM卡一样插入卡槽。</li>
+        <li><b>安装管理工具。</b>各家不同：官方App、开源LPA工具、或微信小程序（BeeSIM）。</li>
+        <li><b>购买流量套餐。</b>下单后会拿到激活二维码或类似 <code>LPA:1$…</code> 格式的激活码。</li>
+        <li><b>写入Profile。</b>在管理工具里扫码或粘贴激活码，此时手机需要另一路网络（如Wi-Fi）。</li>
+        <li><b>启用并联网。</b>选中刚写入的Profile启用，打开蜂窝数据和数据漫游即可上网。</li>
+      </ol>
+    </div>
+    <div class="guide-card">
+      <h3>🍎 国行iPhone怎么办</h3>
+      <p class="guide-note">国行iPhone的eSIM功能被锁但卡槽正常，装不了安卓App，三条路任选。</p>
+      <ol class="guide-steps">
+        <li><b>STK菜单切换（最通用）。</b>插卡后在"设置→蜂窝网络→SIM卡应用程序"里直接切换，不需要任何App。</li>
+        <li><b>蓝牙管理（最直观）。</b>淘宝搜索BeeSIM购买，内置蓝牙芯片，微信小程序连卡即可全程操作。</li>
+        <li><b>免安卓写卡。</b>XeSIM X2 Pro支持纯iPhone独立写卡；其余卡型首次写入建议先借一台安卓机。</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="wrap" style="max-width:820px;">
+    <div class="section-head">
+      <div class="section-eyebrow">FAQ</div>
+      <h2>常见问题</h2>
+    </div>
+    <details class="faq-item">
+      <summary>一张卡能同时激活几个eSIM？</summary>
+      <p>存储上可以放几个到几十个Profile，但同一时刻只能启用一个。双卡手机可以用"实体eSIM卡+手机原生eSIM"组合双待。</p>
+    </details>
+    <details class="faq-item">
+      <summary>去中国旅行，实体卡该怎么搭配流量套餐？</summary>
+      <p>手机本身支持eSIM就直接扫码；不支持就先买一张实体卡，再把套餐Profile下载到卡里。具体套餐对比见"eSIM流量"页面。</p>
+    </details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div><a href="index.html" class="logo" style="margin-bottom:12px;display:flex;">云居民</a><p style="font-size:13.5px;max-width:340px;">出海必备的号码、卡、网络、工具，实测后再推荐给你。</p></div>
+      <div><h4>eSIM</h4><ul><li><a href="esim-card.html">实体卡</a></li><li><a href="esim.html">流量套餐</a></li><li><a href="keepnumber.html">保号卡</a></li></ul></div>
+      <div><h4>更多</h4><ul><li><a href="fxcard.html">境外银行卡</a></li><li><a href="network.html">科学上网</a></li></ul></div>
+      <div><h4>关于</h4><ul><li><a href="index.html#faq">常见问题</a></li><li><a href="contact.html">联系我们</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 云居民 yunjumin.de</span><span>内容仅供参考，请以官方最新信息为准</span></div>
+  </div>
+</footer>
+
+<script>
+function copyCode(id, btn){
+  var text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text).then(function(){
+    var original = btn.innerText; btn.innerText='已复制'; btn.classList.add('copied');
+    setTimeout(function(){ btn.innerText=original; btn.classList.remove('copied'); },1500);
+  });
+}
+</script>
+</body>
+</html>
