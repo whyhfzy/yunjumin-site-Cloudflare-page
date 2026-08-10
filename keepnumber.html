@@ -18,9 +18,9 @@
       <button class="nav-toggle" id="navToggle" aria-label="打开菜单">☰</button>
       <ul id="navList">
         <li><a href="esim-card.html">eSIM实体卡</a></li>
-        <li><a href="esim.html">eSIM流量</a></li>
-        <li><a href="keepnumber.html">eSIM保号</a></li>
-        <li><a href="fxcard.html">境外银行卡</a></li>
+        <li><a href="esim.html">漫游流量</a></li>
+        <li><a href="keepnumber.html">境外电话保号</a></li>
+        <li><a href="fxcard.html">境外银行卡/U卡</a></li>
         <li><a href="network.html">科学上网</a></li>
         <li><a href="index.html#faq">常见问题</a></li>
         <li><a href="contact.html">联系我们</a></li>
@@ -57,7 +57,7 @@
       <div class="ticket-main">
         <span class="ticket-tag">🇳🇱 荷兰 Simyo</span>
         <h3>Simyo</h3>
-        <p>最低套餐€7.5，官方立返€2.5话费；通过推荐链接或推荐码 <b class="mono">NRVBWR</b> 购买再额外赠€5，相当于花7.5欧到手约15欧余额。保号规则宽松：半年内发一条短信或打一次电话即可，一条短信约€0.51，理论上这笔余额能保号12年。⚠️ 付款只支持欧洲本地支付方式（如N26），需要一张欧洲银行卡。</p>
+        <p>最低套餐€7.5，官方立返€2.5话费；通过推荐链接或推荐码 <button class="inline-copy" onclick="copyInline('NRVBWR',this)">NRVBWR</button> 购买再额外赠€5，相当于花7.5欧到手约15欧余额。保号规则宽松：半年内发一条短信或打一次电话即可，一条短信约€0.51，理论上这笔余额能保号12年。⚠️ 付款只支持欧洲本地支付方式（如N26），需要一张欧洲银行卡。</p>
         <p class="price-note" style="padding:0;margin-top:8px;">* 价格以官方实时页面为准</p>
       </div>
       <div class="ticket-stub">
@@ -85,7 +85,7 @@
       <div class="ticket-main">
         <span class="ticket-tag">🇬🇧 中国电信 CTExcel EU</span>
         <h3>CTExcel EU 英国号</h3>
-        <p>中国电信旗下面向欧洲的英国号码卡，保号规则为90天内发一条短信或打一次电话即可，规则比多数港卡更宽松。⚠️ 必须在英国境内完成激活，具体激活方法建议搜索谷歌查最新教程。购买时填写推荐码 <b class="mono">IHCJJM</b>。</p>
+        <p>中国电信旗下面向欧洲的英国号码卡，保号规则为90天内发一条短信或打一次电话即可，规则比多数港卡更宽松。⚠️ 必须在英国境内完成激活，具体激活方法建议搜索谷歌查最新教程。购买时填写推荐码 <button class="inline-copy" onclick="copyInline('IHCJJM',this)">IHCJJM</button>。</p>
         <p class="price-note" style="padding:0;margin-top:8px;">* 价格以官方实时页面为准</p>
       </div>
       <div class="ticket-stub">
@@ -99,7 +99,7 @@
       <div class="ticket-main">
         <span class="ticket-tag">🇺🇸 Saily</span>
         <h3>Saily 美国号</h3>
-        <p>Nord Security（NordVPN团队）出品，月租$0.99即可获得一个美国电话号码，后续官方会陆续上线其他同价位国家号码。需要完成实名认证。使用推荐码 <b class="mono">JAYLENNG</b> 可获赠$5余额。</p>
+        <p>Nord Security（NordVPN团队）出品，月租$0.99即可获得一个美国电话号码，后续官方会陆续上线其他同价位国家号码。需要完成实名认证。使用推荐码 <button class="inline-copy" onclick="copyInline('JAYLENNG',this)">JAYLENNG</button> 可获赠$5余额。</p>
         <p class="price-note" style="padding:0;margin-top:8px;">* 价格以官方实时页面为准</p>
       </div>
       <div class="ticket-stub">
@@ -149,14 +149,23 @@
 <footer>
   <div class="wrap">
     <div class="footer-grid">
-      <div><a href="index.html" class="logo" style="margin-bottom:12px;display:flex;">云居民</a><p style="font-size:13.5px;max-width:340px;">出海必备的号码、卡、网络、工具，实测后再推荐给你。</p></div>
-      <div><h4>eSIM</h4><ul><li><a href="esim-card.html">实体卡</a></li><li><a href="esim.html">流量套餐</a></li><li><a href="keepnumber.html">保号卡</a></li></ul></div>
-      <div><h4>更多</h4><ul><li><a href="fxcard.html">境外银行卡</a></li><li><a href="network.html">科学上网</a></li></ul></div>
+      <div><a href="index.html" class="logo" style="margin-bottom:12px;display:flex;">云居民</a><p style="font-size:13.5px;max-width:340px;">出海必备的电话号码、银行卡及U卡、特殊网络、工具，实测后再推荐给你。</p></div>
+      <div><h4>eSIM</h4><ul><li><a href="esim-card.html">实体卡</a></li><li><a href="esim.html">漫游流量</a></li><li><a href="keepnumber.html">境外电话保号</a></li></ul></div>
+      <div><h4>更多</h4><ul><li><a href="fxcard.html">境外银行卡/U卡</a></li><li><a href="network.html">科学上网</a></li></ul></div>
       <div><h4>关于</h4><ul><li><a href="index.html#faq">常见问题</a></li><li><a href="contact.html">联系我们</a></li></ul></div>
     </div>
     <div class="footer-bottom"><span>© 2026 云居民 yunjumin.de</span><span>内容仅供参考，请以官方最新信息为准</span></div>
   </div>
 </footer>
 
+
+<script>
+function copyInline(code, btn){
+  navigator.clipboard.writeText(code).then(function(){
+    btn.classList.add('copied');
+    setTimeout(function(){ btn.classList.remove('copied'); }, 1200);
+  });
+}
+</script>
 </body>
 </html>
