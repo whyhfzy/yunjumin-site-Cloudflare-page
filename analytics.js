@@ -9,7 +9,7 @@
    3. 建好后会看到一个形如 G-XXXXXXXXXX 的"衡量ID"
    4. 把下面这一行的 G-XXXXXXXXXX 替换成你自己的ID，保存即可
    ============================================================ */
-window.GA_MEASUREMENT_ID = 'G-XXXXXXXXXX';
+window.GA_MEASUREMENT_ID = 'G-7FKDBXN9C9';
 
 (function () {
   // 还没换成真实ID之前，不加载统计脚本，避免报错或产生无效数据
