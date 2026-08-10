@@ -65,13 +65,14 @@ nav a:hover{opacity:1;color:var(--gold-soft);}
 .boarding-strip b{display:block;color:var(--white);font-size:15px;margin-bottom:2px;}
 
 /* ============================================================
-   首页Hero下方的分类速览条 —— 手机端也直接可见，不依赖顶部汉堡菜单
+   首页顶部分类速览条 —— 紧贴header下方，手机端也直接可见
    ============================================================ */
-.quick-cats{display:flex;gap:10px;overflow-x:auto;padding:2px 0 6px;margin-top:32px;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+.cat-strip{background:var(--navy-2);border-top:1px solid rgba(255,255,255,.06);padding:12px 0;}
+.quick-cats{display:flex;gap:10px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
 .quick-cats::-webkit-scrollbar{display:none;}
 .quick-cats a{
   flex-shrink:0;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);
-  color:var(--white);font-size:13px;font-weight:700;padding:9px 16px;border-radius:20px;white-space:nowrap;
+  color:var(--white);font-size:12.5px;font-weight:700;padding:8px 15px;border-radius:20px;white-space:nowrap;
   transition:border-color .15s, color .15s;
 }
 .quick-cats a:hover{border-color:var(--gold-soft);color:var(--gold-soft);}
