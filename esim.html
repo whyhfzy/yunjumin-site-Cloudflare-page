@@ -39,7 +39,7 @@
 <div class="wrap">
   <div class="pick-label">Long-term Picks</div>
   <div class="pick-title">长期使用与优惠码推荐</div>
-  <p class="pick-note">需要长期在大陆使用、访问ChatGPT/Claude等境外服务，或准备一张永不过期的备用流量，重点看下面五种方案。</p>
+  <p class="pick-note">需要长期在大陆使用、访问ChatGPT/Claude等境外服务，或准备一张永不过期的备用流量，重点看下面三种方案。</p>
 
   <div class="plan-grid">
 
@@ -72,12 +72,13 @@
         <div class="plan-badge">St</div>
         <div class="plan-name">Stellar eSIM</div>
         <div class="plan-sub mono">档位最全 · 欧元计价</div>
-        <div class="feature-pill">🌐 AI自动分流：新加坡IP直连，非香港</div>
+        <div class="feature-pill">🌐 选对档位=新加坡IP，AI网站可用</div>
         <ul class="plan-list">
           <li>从100MB到50GB共17档，颗粒度是四家里最细的</li>
-          <li>5GB/30天为官网"最受欢迎"档位，约€1.65起</li>
-          <li>50GB/180天长效档，比30天版本时长翻6倍仅多付€7.28</li>
-          <li>官网以欧元结算，付款需支持外币卡/PayPal</li>
+          <li>同一流量/时长常有两个价位：便宜档是香港IP（部分AI网站不可用），贵一点的是新加坡IP（AI网站可正常用）</li>
+          <li>5GB/30天为官网"最受欢迎"档位，香港IP约€1.65起</li>
+          <li>50GB/180天长效档，比30天版本时长翻6倍仅多付€6.70</li>
+          <li>官网以欧元结算，付款需支持外币卡/PayPal，附赠Stellar VPN覆盖套餐有效期</li>
         </ul>
       </div>
       <div class="plan-links" style="padding-top:16px;border-top:1px solid var(--line);margin-top:auto;">
@@ -145,13 +146,9 @@
           <li>App内Top up随时加购，无需重新下单</li>
         </ul>
       </div>
-     <div class="plan-coupon">
-        <div><div class="label">5%折扣码</div><div class="code mono" id="c-bb">RTGF96FEH</div></div>
-        <button class="copy-btn" onclick="copyCode('c-bb',this)">复制</button>
-      </div>
-      <div class="plan-links">
-        <a href="#tab-switcher" onclick="switchTabByLink('bnesim')">查看价目表 →</a>
-        <a href="https://esim.redteago.com?c=qi53qfvn" target="_blank" rel="noopener"> 查看套餐 →</a>
+      <div class="plan-links" style="padding-top:16px;border-top:1px solid var(--line);margin-top:auto;">
+        <a href="#tab-switcher" onclick="switchTabByLink('redteago')">查看价目表 →</a>
+        <a href="#" target="_blank" rel="noopener">查看套餐 →</a>
       </div>
       <p class="price-note">* 价格以官方实时页面为准</p>
     </div>
@@ -197,32 +194,33 @@
        Stellar eSIM 详细价目表（默认隐藏）—— 17档
        ============================================================ -->
   <div class="tab-panel" id="panel-stellar" style="display:none;">
-    <p class="pick-note" style="margin-bottom:16px;">官网以欧元结算，档位是四家里最全的，从100MB到50GB共17档。人民币价格按约¥7.8/€换算仅供参考，实际以官网结算页显示金额为准。</p>
+    <p class="pick-note" style="margin-bottom:16px;">官网以欧元结算，档位是四家里最全的，从100MB到50GB共17档，同一档位常有"香港IP"和"新加坡IP"两个价位。人民币价格按约¥7.8/€换算仅供参考，实际以官网结算页显示金额为准。</p>
+    <p class="ip-note">🌐 想用ChatGPT/Claude等AI网站，下单时认准 <b>新加坡IP</b> 档位——香港IP价格更便宜，但部分AI网站无法访问。所有套餐均附赠Stellar VPN，覆盖套餐整个有效期。</p>
     <div class="compare-wrap">
       <table class="compare">
-        <thead><tr><th>流量</th><th>有效期</th><th>官网价(EUR)</th><th>约合人民币</th><th>备注</th></tr></thead>
+        <thead><tr><th>流量</th><th>有效期</th><th>出口IP</th><th>官网价(EUR)</th><th>约合人民币</th><th>备注</th></tr></thead>
         <tbody>
-          <tr><th>50GB</th><td>180天</td><td>€18.50</td><td>约¥144</td><td class="cell-good">比30天版本时长×6，只多€7.28</td></tr>
-          <tr><th>50GB</th><td>30天</td><td>€11.22</td><td>约¥88</td><td>—</td></tr>
-          <tr><th>50GB</th><td>30天</td><td>€18.88</td><td>约¥147</td><td>—</td></tr>
-          <tr><th>20GB</th><td>30天</td><td>€5.27</td><td>约¥41</td><td>—</td></tr>
-          <tr><th>20GB</th><td>30天</td><td>€8.95</td><td>约¥70</td><td>—</td></tr>
-          <tr><th>10GB</th><td>30天</td><td>€3.02</td><td>约¥24</td><td>—</td></tr>
-          <tr><th>10GB</th><td>30天</td><td>€4.35</td><td>约¥34</td><td>—</td></tr>
-          <tr><th>5GB</th><td>30天</td><td class="cell-good">€1.65</td><td class="cell-good">约¥13</td><td class="cell-good">官网标注"最受欢迎"</td></tr>
-          <tr><th>5GB</th><td>30天</td><td>€2.27</td><td>约¥18</td><td>官网标注"最受欢迎"</td></tr>
-          <tr><th>3GB</th><td>30天</td><td>€0.54</td><td>约¥4</td><td>—</td></tr>
-          <tr><th>3GB</th><td>30天</td><td>€1.62</td><td>约¥13</td><td>—</td></tr>
-          <tr><th>3GB</th><td>15天</td><td>€1.05</td><td>约¥8</td><td>—</td></tr>
-          <tr><th>3GB</th><td>15天</td><td>€1.49</td><td>约¥12</td><td>—</td></tr>
-          <tr><th>1GB</th><td>7天</td><td>€0.65</td><td>约¥5</td><td>—</td></tr>
-          <tr><th>1GB</th><td>7天</td><td>€0.81</td><td>约¥6</td><td>—</td></tr>
-          <tr><th>500MB</th><td>7天</td><td>€0.74</td><td>约¥6</td><td>—</td></tr>
-          <tr><th>100MB</th><td>7天</td><td>€0.74</td><td>约¥6</td><td>单价最高，不划算</td></tr>
+          <tr><th>50GB</th><td>180天</td><td><span class="pill pill-mid">香港</span></td><td>€17.02</td><td>约¥133</td><td class="cell-good">比30天版本时长×6，只多€6.70</td></tr>
+          <tr><th>50GB</th><td>30天</td><td><span class="pill pill-mid">香港</span></td><td>€10.32</td><td>约¥81</td><td>—</td></tr>
+          <tr><th>50GB</th><td>30天</td><td><span class="pill pill-good">新加坡</span></td><td>€17.37</td><td>约¥136</td><td>AI网站可用</td></tr>
+          <tr><th>20GB</th><td>30天</td><td><span class="pill pill-mid">香港</span></td><td>€5.27</td><td>约¥41</td><td>—</td></tr>
+          <tr><th>20GB</th><td>30天</td><td><span class="pill pill-good">新加坡</span></td><td>€8.95</td><td>约¥70</td><td>AI网站可用</td></tr>
+          <tr><th>10GB</th><td>30天</td><td><span class="pill pill-mid">香港</span></td><td>€3.02</td><td>约¥24</td><td>—</td></tr>
+          <tr><th>10GB</th><td>30天</td><td><span class="pill pill-good">新加坡</span></td><td>€4.35</td><td>约¥34</td><td>AI网站可用</td></tr>
+          <tr><th>5GB</th><td>30天</td><td><span class="pill pill-mid">香港</span></td><td class="cell-good">€1.65</td><td class="cell-good">约¥13</td><td class="cell-good">官网标注"最受欢迎"</td></tr>
+          <tr><th>5GB</th><td>30天</td><td><span class="pill pill-good">新加坡</span></td><td>€2.27</td><td>约¥18</td><td>官网标注"最受欢迎"·AI网站可用</td></tr>
+          <tr><th>3GB</th><td>30天</td><td><span class="pill pill-mid">香港</span></td><td>€0.54</td><td>约¥4</td><td>—</td></tr>
+          <tr><th>3GB</th><td>30天</td><td><span class="pill pill-good">新加坡</span></td><td>€1.62</td><td>约¥13</td><td>AI网站可用</td></tr>
+          <tr><th>3GB</th><td>15天</td><td><span class="pill pill-mid">香港</span></td><td>€1.05</td><td>约¥8</td><td>—</td></tr>
+          <tr><th>3GB</th><td>15天</td><td><span class="pill pill-good">新加坡</span></td><td>€1.49</td><td>约¥12</td><td>AI网站可用</td></tr>
+          <tr><th>1GB</th><td>7天</td><td><span class="pill pill-mid">香港</span></td><td>€0.65</td><td>约¥5</td><td>—</td></tr>
+          <tr><th>1GB</th><td>7天</td><td><span class="pill pill-good">新加坡</span></td><td>€0.81</td><td>约¥6</td><td>AI网站可用</td></tr>
+          <tr><th>500MB</th><td>7天</td><td>—</td><td>€0.74</td><td>约¥6</td><td>—</td></tr>
+          <tr><th>100MB</th><td>7天</td><td>—</td><td>€0.74</td><td>约¥6</td><td>单价最高，不划算</td></tr>
         </tbody>
       </table>
     </div>
-    <p class="disclaimer">✅ 档位最细，几乎每个数据量级都有对应选项 · 可在套餐使用期内随时加购流量，日票类档位不支持加购 · 需要外币支付方式（信用卡/PayPal/境外U卡）。💡 从人民币折算价看，5GB/30天（€1.65约¥13）单价最划算；短期小流量（100MB/500MB）单价明显偏高，不建议单独购买。</p>
+    <p class="disclaimer">✅ 档位最细，几乎每个数据量级都有对应选项 · 可在套餐使用期内随时加购流量，日票类档位不支持加购 · 需要外币支付方式（信用卡/PayPal/境外U卡）。💡 从人民币折算价看，5GB/30天香港IP（€1.65约¥13）单价最划算；如果需要用AI网站，同档位加一点钱选新加坡IP即可；短期小流量（100MB/500MB）单价明显偏高，不建议单独购买。数据核对于2026年8月，具体以官网实时页面为准。</p>
   </div>
 
   <!-- ============================================================
