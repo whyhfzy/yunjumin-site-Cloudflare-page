@@ -66,29 +66,6 @@
 
     <div class="plan-card">
       <div class="plan-body">
-        <div class="plan-badge">S</div>
-        <div class="plan-name">Superalink</div>
-        <div class="plan-sub mono">短期备用 · 2026年8月起涨价</div>
-        <div class="feature-pill">🌐 AI自动分流：新加坡IP直连，非香港</div>
-        <ul class="plan-list">
-          <li>中国移动网络，支持3G/4G/5G</li>
-          <li>日流量分1GB/2GB/5GB三档，有效期1–30天任意组合</li>
-          <li>无需eKYC实名，支持热点共享</li>
-        </ul>
-      </div>
-      <div class="plan-coupon">
-        <div><div class="label">优惠码</div><div class="code mono" id="c-sa">SUPER0000</div></div>
-        <button class="copy-btn" onclick="copyCode('c-sa',this)">复制</button>
-      </div>
-      <div class="plan-links">
-        <a href="#tab-switcher" onclick="switchTabByLink('superalink')">查看价目表 →</a>
-        <a href="https://www.superalink.com/en/destination/aff/SUPER0000" target="_blank" rel="noopener">查看并购买套餐 →</a>
-      </div>
-      <p class="price-note">* 价格以官方实时页面为准</p>
-    </div>
-
-    <div class="plan-card">
-      <div class="plan-body">
         <div class="plan-badge">CC</div>
         <div class="plan-name">esim.cc 年卡</div>
         <div class="plan-sub mono">长期主力 · 国内支付友好</div>
@@ -156,22 +133,42 @@
       <p class="price-note">* 价格以官方实时页面为准</p>
     </div>
 
+    <div class="plan-card">
+      <div class="plan-body">
+        <div class="plan-badge">S</div>
+        <div class="plan-name">Superalink</div>
+        <div class="plan-sub mono">短期备用 · 2026年8月起涨价</div>
+        <div class="feature-pill">🌐 AI自动分流：新加坡IP直连，非香港</div>
+        <ul class="plan-list">
+          <li>中国移动网络，支持3G/4G/5G</li>
+          <li>日流量分1GB/2GB/5GB三档，有效期1–30天任意组合</li>
+          <li>无需eKYC实名，支持热点共享</li>
+        </ul>
+      </div>
+      <div class="plan-coupon">
+        <div><div class="label">优惠码</div><div class="code mono" id="c-sa">SUPER0000</div></div>
+        <button class="copy-btn" onclick="copyCode('c-sa',this)">复制</button>
+      </div>
+      <div class="plan-links">
+        <a href="#tab-switcher" onclick="switchTabByLink('superalink')">查看价目表 →</a>
+        <a href="https://www.superalink.com/en/destination/aff/SUPER0000" target="_blank" rel="noopener">查看并购买套餐 →</a>
+      </div>
+      <p class="price-note">* 价格以官方实时页面为准</p>
+    </div>
+
   </div>
 
   <p class="disclaimer">* 优惠码、活动价、网络出口与AI服务可用性可能调整，速度与分流描述来自实际使用体验，不代表运营商固定承诺，请以下单页和实际分配线路为准。⚠️ Superalink官网提示该产品不供中国大陆居民购买及使用，办理前请自行核实。</p>
 
   <div class="brand-tabs" id="tab-switcher">
     <button class="brand-tab active" data-tab="stellar" onclick="switchTab('stellar',this)">Stellar</button>
-    <button class="brand-tab" data-tab="superalink" onclick="switchTab('superalink',this)">Superalink</button>
     <button class="brand-tab" data-tab="esimcc" onclick="switchTab('esimcc',this)">esim.cc</button>
     <button class="brand-tab" data-tab="bnesim" onclick="switchTab('bnesim',this)">BNESIM</button>
     <button class="brand-tab" data-tab="redteago" onclick="switchTab('redteago',this)">RedteaGO</button>
+    <button class="brand-tab" data-tab="superalink" onclick="switchTab('superalink',this)">Superalink</button>
     <button class="brand-tab jump" data-tab="summary" onclick="switchTab('summary',this)">⚖️ 横向对比</button>
   </div>
 
-  <!-- ============================================================
-       Superalink 详细价目表（默认显示）
-       ============================================================ -->
   <!-- ============================================================
        Stellar eSIM 详细价目表（默认显示）—— 17档
        ============================================================ -->
@@ -203,39 +200,6 @@
       </table>
     </div>
     <p class="disclaimer">✅ 档位最细，几乎每个数据量级都有对应选项 · 可在套餐使用期内随时加购流量，日票类档位不支持加购 · 需要外币支付方式（信用卡/PayPal/境外U卡）。💡 从人民币折算价看，5GB/30天香港IP（€1.65约¥13）单价最划算；如果需要用AI网站，同档位加一点钱选新加坡IP即可；短期小流量（100MB/500MB）单价明显偏高，不建议单独购买。数据核对于2026年8月，具体以官网实时页面为准。</p>
-  </div>
-
-  <!-- ============================================================
-       Superalink 详细价目表（默认隐藏）—— 2026年8月新价目，共18档
-       ============================================================ -->
-  <div class="tab-panel" id="panel-superalink" style="display:none;">
-    <p class="pick-note" style="margin-bottom:16px;">按"日流量 × 有效期天数"自由组合，共18档，日流量分1GB/2GB/5GB三档，8折码 <b class="mono">SUPER0000</b> 可叠加。⚠️ 2026年8月起官网整体调价，同等流量/天数的价格比此前上涨约2–3倍，请酌情比较其他家再决定。</p>
-    <div class="compare-wrap">
-      <table class="compare">
-        <thead><tr><th>套餐</th><th>总流量</th><th>有效期</th><th>官网价</th><th>8折后</th></tr></thead>
-        <tbody>
-          <tr><th>1GB/天 × 1天</th><td>共1GB</td><td>1天</td><td>¥15.00</td><td class="cell-good">¥12.00</td></tr>
-          <tr><th>1GB/天 × 3天</th><td>共3GB</td><td>3天</td><td>¥30.00</td><td>¥24.00</td></tr>
-          <tr><th>1GB/天 × 5天</th><td>共5GB</td><td>5天</td><td>¥48.00</td><td>¥38.40</td></tr>
-          <tr><th>1GB/天 × 10天</th><td>共10GB</td><td>10天</td><td>¥90.00</td><td>¥72.00</td></tr>
-          <tr><th>1GB/天 × 20天</th><td>共20GB</td><td>20天</td><td>¥171.00</td><td>¥136.80</td></tr>
-          <tr><th>1GB/天 × 30天</th><td>共30GB</td><td>30天</td><td>¥243.00</td><td>¥194.40</td></tr>
-          <tr><th>2GB/天 × 1天</th><td>共2GB</td><td>1天</td><td>¥18.00</td><td>¥14.40</td></tr>
-          <tr><th>2GB/天 × 3天</th><td>共6GB</td><td>3天</td><td>¥48.00</td><td>¥38.40</td></tr>
-          <tr><th>2GB/天 × 5天</th><td>共10GB</td><td>5天</td><td>¥81.00</td><td>¥64.80</td></tr>
-          <tr><th>2GB/天 × 10天</th><td>共20GB</td><td>10天</td><td>¥156.00</td><td>¥124.80</td></tr>
-          <tr><th>2GB/天 × 20天</th><td>共40GB</td><td>20天</td><td>¥294.00</td><td>¥235.20</td></tr>
-          <tr><th>2GB/天 × 30天</th><td>共60GB</td><td>30天</td><td>¥417.00</td><td>¥333.60</td></tr>
-          <tr><th>5GB/天 × 1天</th><td>共5GB</td><td>1天</td><td>¥27.00</td><td>¥21.60</td></tr>
-          <tr><th>5GB/天 × 3天</th><td>共15GB</td><td>3天</td><td>¥78.00</td><td>¥62.40</td></tr>
-          <tr><th>5GB/天 × 5天</th><td>共25GB</td><td>5天</td><td>¥129.00</td><td>¥103.20</td></tr>
-          <tr><th>5GB/天 × 10天</th><td>共50GB</td><td>10天</td><td>¥249.00</td><td>¥199.20</td></tr>
-          <tr><th>5GB/天 × 20天</th><td>共100GB</td><td>20天</td><td>¥471.00</td><td>¥376.80</td></tr>
-          <tr><th>5GB/天 × 30天</th><td>共150GB</td><td>30天</td><td>¥666.00</td><td>¥532.80</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="disclaimer">✅ 中国移动(CMCC) 3/4/5G · 购买后180天内需激活 · 每日额度用完后降速 · 无需eKYC实名，支持热点共享 · 官网提示不支持大陆本地支付方式，但套餐在大陆仍可正常使用。⚠️ 同等150GB/30天套餐，涨价前约¥177.60，现在约¥532.80，涨幅明显，长期大流量建议优先比较esim.cc或Stellar。数据核对于2026年8月，具体以官网实时页面为准。</p>
   </div>
 
   <!-- ============================================================
@@ -318,21 +282,54 @@
   </div>
 
   <!-- ============================================================
+       Superalink 详细价目表（默认隐藏）—— 2026年8月新价目，共18档
+       ============================================================ -->
+  <div class="tab-panel" id="panel-superalink" style="display:none;">
+    <p class="pick-note" style="margin-bottom:16px;">按"日流量 × 有效期天数"自由组合，共18档，日流量分1GB/2GB/5GB三档，8折码 <b class="mono">SUPER0000</b> 可叠加。⚠️ 2026年8月起官网整体调价，同等流量/天数的价格比此前上涨约2–3倍，请酌情比较其他家再决定。</p>
+    <div class="compare-wrap">
+      <table class="compare">
+        <thead><tr><th>套餐</th><th>总流量</th><th>有效期</th><th>官网价</th><th>8折后</th></tr></thead>
+        <tbody>
+          <tr><th>1GB/天 × 1天</th><td>共1GB</td><td>1天</td><td>¥15.00</td><td class="cell-good">¥12.00</td></tr>
+          <tr><th>1GB/天 × 3天</th><td>共3GB</td><td>3天</td><td>¥30.00</td><td>¥24.00</td></tr>
+          <tr><th>1GB/天 × 5天</th><td>共5GB</td><td>5天</td><td>¥48.00</td><td>¥38.40</td></tr>
+          <tr><th>1GB/天 × 10天</th><td>共10GB</td><td>10天</td><td>¥90.00</td><td>¥72.00</td></tr>
+          <tr><th>1GB/天 × 20天</th><td>共20GB</td><td>20天</td><td>¥171.00</td><td>¥136.80</td></tr>
+          <tr><th>1GB/天 × 30天</th><td>共30GB</td><td>30天</td><td>¥243.00</td><td>¥194.40</td></tr>
+          <tr><th>2GB/天 × 1天</th><td>共2GB</td><td>1天</td><td>¥18.00</td><td>¥14.40</td></tr>
+          <tr><th>2GB/天 × 3天</th><td>共6GB</td><td>3天</td><td>¥48.00</td><td>¥38.40</td></tr>
+          <tr><th>2GB/天 × 5天</th><td>共10GB</td><td>5天</td><td>¥81.00</td><td>¥64.80</td></tr>
+          <tr><th>2GB/天 × 10天</th><td>共20GB</td><td>10天</td><td>¥156.00</td><td>¥124.80</td></tr>
+          <tr><th>2GB/天 × 20天</th><td>共40GB</td><td>20天</td><td>¥294.00</td><td>¥235.20</td></tr>
+          <tr><th>2GB/天 × 30天</th><td>共60GB</td><td>30天</td><td>¥417.00</td><td>¥333.60</td></tr>
+          <tr><th>5GB/天 × 1天</th><td>共5GB</td><td>1天</td><td>¥27.00</td><td>¥21.60</td></tr>
+          <tr><th>5GB/天 × 3天</th><td>共15GB</td><td>3天</td><td>¥78.00</td><td>¥62.40</td></tr>
+          <tr><th>5GB/天 × 5天</th><td>共25GB</td><td>5天</td><td>¥129.00</td><td>¥103.20</td></tr>
+          <tr><th>5GB/天 × 10天</th><td>共50GB</td><td>10天</td><td>¥249.00</td><td>¥199.20</td></tr>
+          <tr><th>5GB/天 × 20天</th><td>共100GB</td><td>20天</td><td>¥471.00</td><td>¥376.80</td></tr>
+          <tr><th>5GB/天 × 30天</th><td>共150GB</td><td>30天</td><td>¥666.00</td><td>¥532.80</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="disclaimer">✅ 中国移动(CMCC) 3/4/5G · 购买后180天内需激活 · 每日额度用完后降速 · 无需eKYC实名，支持热点共享 · 官网提示不支持大陆本地支付方式，但套餐在大陆仍可正常使用。⚠️ 同等150GB/30天套餐，涨价前约¥177.60，现在约¥532.80，涨幅明显，长期大流量建议优先比较esim.cc或Stellar。数据核对于2026年8月，具体以官网实时页面为准。</p>
+  </div>
+
+  <!-- ============================================================
        五家横向对比汇总表（默认隐藏）
        ============================================================ -->
   <div class="tab-panel" id="panel-summary" style="display:none;">
     <div class="compare-wrap">
       <table class="compare">
-        <thead><tr><th>维度</th><th>Stellar</th><th>Superalink</th><th>esim.cc</th><th>BNESIM</th><th>RedteaGO</th></tr></thead>
+        <thead><tr><th>维度</th><th>Stellar</th><th>esim.cc</th><th>BNESIM</th><th>RedteaGO</th><th>Superalink</th></tr></thead>
         <tbody>
-          <tr><th>最低门槛</th><td>3GB/30天(香港IP)，约¥4</td><td class="cell-good">1GB/天×1天，8折后¥12</td><td>1GB/30天，9折后约¥10</td><td>限期1GB/30天，8折后约¥16</td><td>500MB/7天，约¥7</td></tr>
-          <tr><th>套餐结构</th><td>17档流量+期限组合，同档常分香港/新加坡IP两个价位</td><td>1/2/5GB三档日流量，1–30天任意组合，共18档</td><td>日票2GB/天 + 1–100GB定额</td><td>30天限期 + 永不过期两类</td><td>按天无限流量(2档) + 定额套餐(HK+SG IP / SG IP两种出口)</td></tr>
-          <tr><th>短期大流量</th><td>20GB/30天(香港IP)，约¥41起</td><td>5GB/天×10天(50GB)，8折后¥199.20</td><td>7天共14GB高速，9折后约¥86</td><td>50GB/30天，8折后约¥124</td><td>10GB/60天(HK+SG IP)，约¥42起</td></tr>
-          <tr><th>长期/防失联</th><td>50GB/180天最长档，约¥133起</td><td>最长30天，不适合长期保底</td><td class="cell-good">100GB/365天，9折后约¥305</td><td class="cell-good">50GB永不过期，8折后约¥156</td><td class="cell-good">100GB/365天(HK+SG IP)，约¥359起</td></tr>
-          <tr><th>超量规则</th><td>定额按总量扣除，用完为止，不支持超量</td><td>每日额度用完后降速</td><td>日票每天2GB后降至128kbps</td><td>定额按总量扣除，另有不限量档</td><td>定额按总量扣除；另有按天无限流量档可选</td></tr>
-          <tr><th>激活/有效期</th><td>有效期7天–180天不等，按下单档位固定</td><td>购买后180天内激活</td><td>购买后90天内激活，最长365天</td><td>可选30天或永不过期</td><td>有效期自首次连接开始计时，部分套餐安装即激活</td></tr>
-          <tr><th>网络与热点</th><td>支持热点分享，套餐期内附赠Stellar VPN</td><td>CMCC 3/4/5G，支持热点共享</td><td class="cell-good">中国移动4/5G，支持热点</td><td>官方页面未标明热点限制</td><td>官网未标明具体网络代际信息</td></tr>
-          <tr><th>购买限制</th><td class="cell-good">支持外币卡及paypal支付</td><td>官网提示不支持大陆本地支付方式，套餐在大陆仍可用</td><td class="cell-good">官网未见大陆居民限制</td><td class="cell-good">官网未见大陆居民限制</td><td class="cell-good">不支持大陆支付方式</td></tr>
+          <tr><th>最低门槛</th><td>3GB/30天(香港IP)，约¥4</td><td>1GB/30天，9折后约¥10</td><td>限期1GB/30天，8折后约¥16</td><td>500MB/7天，约¥7</td><td class="cell-good">1GB/天×1天，8折后¥12</td></tr>
+          <tr><th>套餐结构</th><td>17档流量+期限组合，同档常分香港/新加坡IP两个价位</td><td>日票2GB/天 + 1–100GB定额</td><td>30天限期 + 永不过期两类</td><td>按天无限流量(2档) + 定额套餐(HK+SG IP / SG IP两种出口)</td><td>1/2/5GB三档日流量，1–30天任意组合，共18档</td></tr>
+          <tr><th>短期大流量</th><td>20GB/30天(香港IP)，约¥41起</td><td>7天共14GB高速，9折后约¥86</td><td>50GB/30天，8折后约¥124</td><td>10GB/60天(HK+SG IP)，约¥42起</td><td>5GB/天×10天(50GB)，8折后¥199.20</td></tr>
+          <tr><th>长期/防失联</th><td>50GB/180天最长档，约¥133起</td><td class="cell-good">100GB/365天，9折后约¥305</td><td class="cell-good">50GB永不过期，8折后约¥156</td><td class="cell-good">100GB/365天(HK+SG IP)，约¥359起</td><td>最长30天，不适合长期保底</td></tr>
+          <tr><th>超量规则</th><td>定额按总量扣除，用完为止，不支持超量</td><td>日票每天2GB后降至128kbps</td><td>定额按总量扣除，另有不限量档</td><td>定额按总量扣除；另有按天无限流量档可选</td><td>每日额度用完后降速</td></tr>
+          <tr><th>激活/有效期</th><td>有效期7天–180天不等，按下单档位固定</td><td>购买后90天内激活，最长365天</td><td>可选30天或永不过期</td><td>有效期自首次连接开始计时，部分套餐安装即激活</td><td>购买后180天内激活</td></tr>
+          <tr><th>网络与热点</th><td>支持热点分享，套餐期内附赠Stellar VPN</td><td class="cell-good">中国移动4/5G，支持热点</td><td>官方页面未标明热点限制</td><td>官网未标明具体网络代际信息</td><td>CMCC 3/4/5G，支持热点共享</td></tr>
+          <tr><th>购买限制</th><td class="cell-good">支持外币卡及paypal支付</td><td class="cell-good">官网未见大陆居民限制</td><td class="cell-good">官网未见大陆居民限制</td><td class="cell-good">不支持大陆支付方式</td><td>官网提示不支持大陆本地支付方式，套餐在大陆仍可用</td></tr>
         </tbody>
       </table>
     </div>
